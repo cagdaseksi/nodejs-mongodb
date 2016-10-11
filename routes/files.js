@@ -31,7 +31,8 @@ console.log(form);
 
       fs.readFile(img.path, function(err,data){
 
-      var path = "./public/files/" + "cagdas.jpg";
+      //var path = "./public/files/" + img.originalFilename;
+      var path = "./public/files/" + "filename.jpg";
 
       fs.writeFile(path,data,function(error){
 
