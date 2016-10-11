@@ -1,0 +1,23 @@
+<div class="panel panel-default">
+  <div class="panel-heading clearfix">
+    <h4 class="pull-left">Users</h4>
+    <a href="users/new" class="pull-right btn btn-primary">
+      <span>New</span>
+    </a>
+  </div>
+  <div class="panel-body">
+    {{#if users}}
+      <ul class="list-group">
+        {{#each users}}
+          <li class="list-group-item">
+            <b>{{this.name}} {{this.surname}}</b>
+            <i>{{this.registerTime}}</i>
+            <a class="btn btn-warning btn-xs pull-right" href="users/edit/{{this._id}}">Düzenle</a>
+          </li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <h1>No User!</h1>
+    {{/if}}
+  </div>
+</div>

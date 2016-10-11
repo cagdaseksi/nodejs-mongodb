@@ -1,0 +1,40 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>User Add</h4>
+  </div>
+  <div class="panel-body">
+    <form class="" action="/users/edit/{{user._id}}" method="post">
+      <div class="col-xs-5 col-xs-offset-4 text-center">
+        <b>name</b> <br>
+        <input type="text" name="name" value="{{user.name}}">
+      </div>
+      <div class="col-xs-5 col-xs-offset-4 text-center">
+        <b>surname</b> <br>
+        <input type="text" name="surname" value="{{user.surname}}">
+      </div>
+      <div class="col-xs-5 col-xs-offset-4 text-center">
+         <b>username</b> <br>
+         <input type="text" name="username" value="{{user.username}}">
+      </div>
+      <div class="col-xs-5 col-xs-offset-4 text-center">
+        <b>email</b> <br>
+        <input type="text" name="email" value="{{user.email}}">
+      </div>
+      <div class="col-xs-5 col-xs-offset-4 text-center">
+         <b>password</b> <br>
+         <input type="text" name="password" value="{{user.password}}">
+      </div>
+      <div class="col-xs-5 col-xs-offset-4 text-center">
+        <b>age</b> <br>
+        <input type="text" name="age" value="{{user.age}}">
+      </div>
+      <div class="col-xs-5 col-xs-offset-4 text-center">
+        <b>admin</b> <br>
+        <input type="text" name="admin" value="{{user.admin}}">
+      </div>
+      <div class="col-xs-5 col-xs-offset-4 text-center">
+        <button type="submit">GÖNDER</button>
+      </div>
+    </form>
+  </div>
+</div>

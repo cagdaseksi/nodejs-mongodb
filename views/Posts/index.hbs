@@ -1,0 +1,23 @@
+<div class="panel panel-default">
+  <div class="panel-heading clearfix">
+    <h4 class="pull-left">Posts</h4>
+    <a href="posts/new" class="pull-right btn btn-primary">
+      <span>New</span>
+    </a>
+  </div>
+  <div class="panel-body">
+    {{#if posts}}
+      <ul class="list-group">
+        {{#each posts}}
+          <li class="list-group-item">
+            <b>{{this.title}} {{this.shortdescription}}</b>
+            <i>{{this.registerTime}}</i>
+            <a class="btn btn-warning btn-xs pull-right" href="posts/edit/{{this._id}}">Düzenle</a>
+          </li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <h1>No Posts!</h1>
+    {{/if}}
+  </div>
+</div>
