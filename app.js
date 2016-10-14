@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 // Mongoose
 mongoose.Promise = global.Promise;
 mongoose
-  .connect('mongodb://localhost/crud-learning')
+  .connect('mongodb://localhost/crud_learning')
   .then(() => {
     console.log('MongoDB: connection succesful');
   })
@@ -34,6 +34,7 @@ app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
 app.use('/posts', require('./routes/posts'));
 app.use('/files', require('./routes/files'));
+app.use('/leagues', require('./routes/leagues'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
